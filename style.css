@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container{
+    max-width: 600px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container picture img{
+    min-width: 50%;
+    border-radius: 12px 0 0 12px;
+}
+
+.container .product-info{
+    background-color: hsl(0, 0%, 100%);
+    padding: 2.2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-radius: 0 12px 12px 0;
+}
+
+.container .product-info h1{
+    font-family: 'Fraunces', sans-serif;
+    line-height: 1;
+}
+
+.container p{
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+}
+
+.container p:first-of-type{
+    letter-spacing: 5px;
+}
+
+h1,
+p{
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.container .price{
+    display: flex;
+    align-items: center;
+}
+
+.container .price h1{
+    color: hsl(158, 36%, 37%);
+    margin-right: 1rem;
+}
+
+.container .price p{
+    font-size: 12px;
+    letter-spacing: 0;
+    text-decoration: line-through;
+}
+
+button{
+    border: none;
+    background-color:hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    padding: .7rem 1rem;
+    border-radius: 6px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover{
+    background-color: hsl(158, 42%, 18%);
+    cursor: pointer;
+}
+
+i{
+    margin-right: 5px;
+}
+
+@media (max-width: 780px){
+    
+    .container{
+        max-width: 90%;
+        flex-direction: column;
+        height: 100vh;
+        padding: 0;
+    }
+    .container img{
+        width: 100%;
+        height: 50%;
+        border-radius: 8px 8px 0 0;
+    }
+    .container .product-info{
+        border-radius: 0 0 12px 12px;
+        padding: 1.5rem;
+    }
+    h1,
+p{
+    margin-bottom: 0.8rem;
+    text-align: left;
+}
+}

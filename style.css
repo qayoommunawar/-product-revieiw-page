@@ -28,7 +28,7 @@ body{
     align-items: center;
 }
 
-.container picture img{
+.container img{
     min-width: 50%;
     border-radius: 12px 0 0 12px;
 }
